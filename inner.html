@@ -24,7 +24,73 @@
   <main class="contant-inner">
     <section class="filters">
       <h2 class="visually-hidden">Фильтр</h2>
-<!--        форма будет тут       -->
+<section class="filters">
+<form class="filter" action="https://echo.htmlacademy.ru" method="post">
+<fieldset>
+<legend>Инфраструктура:</legend>
+<ul>
+	<li class="filter-option">
+	<input id="pool" type="checkbox" name="waterpool" checked>
+	<label for="pool">Бассейн</label>
+	</li>
+	<li class="filter-option">
+    <input id="parking" type="checkbox" name="car park">
+    <label id="parking">Парковка</label>
+	</li>
+	<li class="filter-option">
+	<input id="wi-fi" type="checkbox" name="internet">
+	<label for="wi-fi">Wi-fi</label>
+	</li>
+</ul>
+</fieldset>
+</form>
+</section>
+
+<section class="filters">
+<form class="filter" action="https://echo.htmlacademy.ru" method="post">
+<fieldset>
+<legend>Тип жилья:</legend>
+<ul>
+	<li class="filter-option">
+	<input id="hotel" type="checkbox" name="hotel-room" checked>
+	<label for="hotel">Гостиница</label>
+	</li>
+	<li class="filter-option">
+    <input id="motel" type="checkbox" name="motel-room" checked>
+    <label id="motel">Мотель</label>
+	</li>
+	<li class="filter-option">
+	<input id="room" type="checkbox" name="apartment" checked>
+	<label for="room">Апартаменты</label>
+	</li>
+</ul>
+</fieldset>
+</form>
+</section>
+
+<section class="filters">
+<form class="filter" action="https://echo.htmlacademy.ru" method="post">
+<fieldset>
+<legend>Стоимость в сутки(р):</legend>
+<ul>
+	<li class="">От
+	<input id="min-price" name="price" value="0">
+	<label for="min-price"></label>
+	</li>
+	<li class="filter-option">До
+    <input id="parking" name="price" value="3000">
+    <label id="parking"></label>
+	</li>
+	<li>
+	<label>
+		<input type="range" name="radio">
+	</label>
+	</li>
+</ul>
+<button class="reveal-btn" type="submit">Показать</button>
+</fieldset>
+</form>
+</section>
     </section>
       
   <section class="sort">
