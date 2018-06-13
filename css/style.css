@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+    text-transform: uppercase;
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+.main-image {
+    background-image: url(/img/background-photo.jpg);
+}
+.main-navigation {
+    font-size: 14px;
+    line-height: 26px;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.main-navigation-list {
+    list-style: none;
+}
+
+.main-navigation-list a {
+    color: #000000;
+}
+
+.main-navigation-list a:hover {
+    color: #81b3d2;
+}
+
+.main-navigation-list a:focus {
+    color: #b2b2b2;
+}
+
+.content-title,
+.content-feature {
+    text-align: center;
+}
+
+.content-title {
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.features-row {
+    color: #ffffff;
+    text-align: center;
+    background-color: #81b3d2;
+    background-image: url(/img/pattern.jpg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.features-advantages {
+    color: #000000;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.features-advantages-grey {
+    color: #000000;
+    background-color: #eeeeee;
+    text-align: center;
+}
+
+.search {
+    color: #000000;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.search-btn {
+    color: #ffffff;
+    background-color: #766357;
+}
+
+.serch-btn a:hover {
+    background-color: #604e43;
+}
+
+.serch-btn a:focus {
+    background-color: #503e33;
+}
+
+.find-button {
+    color: #ffffff;
+    background-color: #81b3d2;
+    background-image: url(/img/find.jpg);
+}
+
+.main-footer {
+    color: #000000;
+    background-color: #ffffff;
+    background-image: url(/img/footer.jpg);
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+
+.footer-social {
+    text-align: center;
+}
+
+.footer-social ul {
+    list-style: none;
+}
+
+.social-button {
+    color: #000000;
+}
+
+.filters {
+    color: #ffffff;
+    background-color: #000000;
+    background-image: url(/img/background-copy.jpg);
+    background-position: 0 0;
+    background-repeat: repeat;
+}
