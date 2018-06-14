@@ -13,11 +13,14 @@ a {
     text-decoration: none;
 }
 .main-image {
-    background-image: url(/img/background-photo.jpg);
+    background-image: url(../img/background-photo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .main-navigation {
     font-size: 14px;
     line-height: 26px;
+    font-weight: 700;
     color: #000000;
     background-color: #ffffff;
 }
@@ -46,13 +49,14 @@ a {
 .content-title {
     font-size: 21px;
     line-height: 26px;
+    font-weight: 700;
 }
 
 .features-row {
     color: #ffffff;
     text-align: center;
     background-color: #81b3d2;
-    background-image: url(/img/pattern.jpg);
+    background-image: url(../img/pattern.jpg);
     background-position: 0 0;
     background-repeat: no-repeat;
 }
@@ -70,9 +74,21 @@ a {
 }
 
 .search {
+    font-weight: 700;
     color: #000000;
     background-color: #ffffff;
     text-align: center;
+}
+.search-item input {
+    font: inherit;
+    background-color: #f2f2f2;
+}
+.search-item input:hover {
+    background-color: #ebebeb;
+}
+.search-item input:focus {
+    background-color: #ffffff;
+    border: solid 2px #e5e5e5;
 }
 
 .search-btn {
@@ -87,7 +103,6 @@ a {
 .serch-btn a:focus {
     background-color: #503e33;
 }
-
 .find-button {
     color: #ffffff;
     background-color: #81b3d2;
@@ -100,6 +115,9 @@ a {
     background-image: url(/img/footer.jpg);
     background-position: 0 0;
     background-repeat: repeat;
+}
+.footer-site {
+    font-weight: 700;
 }
 
 .footer-social {
@@ -117,7 +135,7 @@ a {
 .filters {
     color: #ffffff;
     background-color: #000000;
-    background-image: url(/img/background-copy.jpg);
+    background-image: url(../img/background-copy.jpg);
     background-position: 0 0;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
 }
