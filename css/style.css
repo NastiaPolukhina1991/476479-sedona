@@ -22,7 +22,7 @@ a {
 }
 .main-header {
     position: relative;
-    min-height: 56px;
+/*    min-height: 56px;*/
 }
 .main-header-logo {
   position: absolute;
@@ -64,7 +64,8 @@ a {
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-top: 22px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .main-navigation-list a {
@@ -215,9 +216,12 @@ a {
   font-weight: 700;
   line-height: 26px;
 }
+.hotels-list {
+  margin: 0;
+  padding-left: 72px;
+}
 .hotels-item {
   display: flex;
-  justify-content: space-around;
 }
 .hotels-title {
   font-size: 21px;
@@ -229,6 +233,14 @@ a {
 }
 .hotels-title:focus {
   color: rgba(255, 255, 255, 0.3);
+}
+.hotels-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+.hotels-rating {
+  margin-left: auto;
 }
 .sort-item .current {
   color: #81b3d2;
@@ -252,8 +264,14 @@ a {
   display: flex;
   justify-content: space-around;
   min-height: 86px;
+  padding: 0;
+  margin: 0;
+}
+.hotels-item-price {
+  display: flex;
 }
 .button-blue {
+  padding: 3px 17px;
   color: #ffffff;
   background-color: #81b3d2;
 }
@@ -265,6 +283,8 @@ a {
   color: rgba(255, 255, 255, 0.3);
 }
 .button-brown {
+  margin-left: 6px;
+  padding: 3px 17px;
   color: #ffffff;
   background-color: #766357;
 }
