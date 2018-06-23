@@ -26,7 +26,7 @@
     </header>
     <main class="content">
       <div class="main-image">
-        <img src="img/Welcome.png" width="450" height="370" alt="Добро пожаловать в Седону">
+        <img class="top-image" src="img/Welcome.png" width="450" height="370" alt="Добро пожаловать в Седону">
       </div>
 
       <h1 class="visually-hidden">Туры в Седону</h1>
@@ -43,11 +43,11 @@
         <div class="features-row">
           <div class="text-content">
             <h2 class="features-title">Настоящий городок</h2>
-            <p class="features-number">№1</p>
+            <p class="features-number">— №1 —</p>
             <p class="features-text">Седона- Не атракцион для туристов, там течет своя жизнь</p>
           </div>
           <div class="features-picture">
-            <img src="img/realtown.jpg" width="512" height="256" alt="Красивый вид города">
+            <img src="img/realtown.png" width="800" height="256" alt="Красивый вид города">
           </div>
         </div>
 
@@ -73,11 +73,11 @@
         <!--       2       -->
         <div class="features-row">
           <div class="features-picture">
-            <img src="img/realtown-2.jpg" width="512" height="256" alt="Красивый вид каньона">
+            <img src="img/realtown-2.jpg" width="800" height="256" alt="Красивый вид каньона">
           </div>
           <div class="text-content">
             <h2 class="features-title">Там есть мост дьявола</h2>
-            <p class="features-number">№2</p>
+            <p class="features-number">— №2 —</p>
             <p class="features-text">Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
           </div>
         </div>
@@ -85,19 +85,19 @@
         <div class="features-advantages-grey">
           <div class="features-advantages-item">
             <h2 class="features-title">Небольшая площадка</h2>
-            <p class="features-number">№3</p>
+            <p class="features-number">— №3 —</p>
             <p class="features-text">Все достопримечательности находятся очень близко</p>
           </div>
 
           <div class="features-advantages-item">
             <h2 class="features-title">Красивая дорога</h2>
-            <p class="features-number">№4</p>
+            <p class="features-number">— №4 —</p>
             <p class="features-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
 
           <div class="features-advantages-item">
             <h2 class="features-title">Мало туристов</h2>
-            <p class="features-number">№5</p>
+            <p class="features-number">— №5 —</p>
             <p class="features-text">Большинство едет в Гранд Каньон и толпится там</p>
           </div>
         </div>
@@ -106,7 +106,9 @@
       <section class="search">
         <h2 class="search-title">Заинтересовались?</h2>
         <p class="search-info">Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостинец в Седоне</p>
+        <div class="search-btn-container">
         <a class="search-btn" href="./form.html">Поиск гостиниц в Седоне</a>
+        </div>
         <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
           <p class="search-item">
             <label for="search-arrival">Дата заезда:</label>
@@ -140,24 +142,26 @@
           <button class="find-button" type="submit">Найти</button>
         </form>
       </section>
-      <section class="map">
-        <img src="img/map.jpg">
-      </section>
+
     </main>
-    <footer class="main-footer">
-      <p class="footer-site">#Visitsedona</p>
-      <div class="footer-social">
-        <ul>
-          <li><a class="social-button" href="#">Твиттер</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Youtube</a></li>
-        </ul>
-      </div>
-      <p class="footer-copyright">
-        <b>Website by</b>
-        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="./img/html-acad.png" alt="html academy" width="118px" height="43px"> </a>
-      </p>
-    </footer>
+    <div class="map">
+      <img src="img/map.jpg" width="1200" height="593" alt="Карта Седона">
+      <footer class="main-footer">
+        <p class="footer-site">#Visitsedona</p>
+        <div class="footer-social">
+          <ul>
+            <li><a class="social-button" href="#">Твиттер</a></li>
+            <li><a class="social-button" href="#">Фейсбук</a></li>
+            <li><a class="social-button" href="#">Youtube</a></li>
+          </ul>
+        </div>
+        <p class="footer-copyright">
+          <b>Website by</b>
+          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="./img/html-acad.png" alt="html academy" width="118px" height="43px"> </a>
+        </p>
+      </footer>
+    </div>
+
   </div>
 </body>
 
