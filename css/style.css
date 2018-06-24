@@ -16,13 +16,33 @@ body {
 a {
   text-decoration: none;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .container {
   width: 1200px;
   margin: 0 auto;
 }
 .main-header {
     position: relative;
-/*    min-height: 56px;*/
 }
 .main-header-logo {
   position: absolute;
@@ -41,10 +61,22 @@ a {
   margin-top: 76px;
 }
 .main-image {
-  min-height: 512px;
+  position: relative;
+  min-height: 508px;
+  background-color: #cbd4dc;
   background-image: url(../img/background-photo.jpg);
-  background-position: top center;
+  background-position: 50% 28%;
   background-repeat: no-repeat;
+  z-index: -1;
+}
+.main-image::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 1200px;
+  height: 57px;
+  background: url(../img/mask.png) no-repeat;
 }
 
 .main-navigation {
@@ -59,7 +91,7 @@ a {
 
 .main-navigation-list {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
   min-width: 768px;
   list-style: none;
   margin: 0;
@@ -68,9 +100,20 @@ a {
   padding-bottom: 15px;
 }
 
-.main-navigation-list a {
+.left a {
+  padding-left: 72px;
+  padding-right: 75px;
   color: #000000;
 }
+.right-karta a {
+  padding-left: 313px;
+  color: #000000;
+}
+.right a {
+  padding-left: 165px;
+  color: #000000;
+}
+
 
 .main-navigation-list a:hover {
   color: #81b3d2;
@@ -78,10 +121,6 @@ a {
 
 .main-navigation-list a:focus {
   color: #b2b2b2;
-}
-
-.main-navigation-item {
-  color: #766357;
 }
 .content-title,
 .content-feature {
@@ -92,8 +131,14 @@ a {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  margin: 0 360px;
+  margin-bottom: 30px;
+  padding-top: 60px;
 }
-
+.content-feature {
+  margin: 0;
+  padding-bottom: 53px;
+}
 .features-row {
   display: flex;
   height: 256px;
@@ -104,19 +149,37 @@ a {
 .text-content {
   flex: 0 0 33.3333%;
 }
+.features-title {
+  font-size: 21px;
+  width: 153px;
+  margin: 0 auto;
+  margin-top: 23px;
+}
+
+.features-number {
+  margin: 0 auto;
+  margin-top: 25px;
+}
+.features-text {
+  margin: 0 auto;
+  margin-top: 21px;
+  margin-bottom: 81px;
+}
 .features-picture {
   flex: 0 0 66.6666%;
 }
 .features-advantages {
   display: flex;
   justify-content: space-around;
-  margin-top: 61px;
-  margin-bottom: 66px;
   color: #000000;
   background-color: #ffffff;
   text-align: center;
 }
-
+.home,
+.food,
+.gift {
+  margin-top: 60px;
+}
 .features-advantages-grey {
   display: flex;
   justify-content: space-around;
@@ -134,15 +197,44 @@ a {
   background-color: #ffffff;
   text-align: center;
 }
+.search input {
+  border: none;
+  text-transform: uppercase;
+}
+.search-title {
+  font-size: 30px;
+}
+.search-info {
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
 .search-form {
-  display: flex;
-  flex-direction: column;
+  position: absolute;
+  left: 0;
+  right: 0;
   width: 568px;
   margin: 0 auto;
+  margin-bottom: 57px;
+  padding-top: 55px;
+  background: #ffffff;
+  box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
+}
+.search-item {
+  width: 450px;
+  margin: 0;
+  margin-bottom: 29px;
+  margin-left: 55px;
+  text-align: left;
+  line-height: 26px;
 }
 .search-item input {
   font: inherit;
   background-color: #f2f2f2;
+}
+.search-item label {
+  margin-right: 21px;
 }
 
 .search-item input:hover {
@@ -160,10 +252,12 @@ a {
   font-size: 21px;
   font-weight: bold;
   margin: 0 auto;
+  margin-top: 52px;
   color: #ffffff;
   background-color: #766357;
 }
 .search-btn-container {
+  position: relative;
   width: 568px;
   height: 86px;
   text-align: center;
@@ -188,6 +282,7 @@ a {
   font-weight: bold;
   line-height: 21px;
   margin: 0 auto;
+  margin-bottom: 55px;
   border: none;
   text-transform: uppercase;
   color: #ffffff;
@@ -307,14 +402,18 @@ a {
 .main-footer {
   display: flex;
   justify-content: space-around;
-/*  margin-top: -100px;*/
+  margin-top: -120px;
+  height: 120px;
   color: #000000;
   background: #ffffff;
   opacity: 0.9;
 }
 
 .footer-site {
+  font-size: 21px;
+  line-height: 26px;
   font-weight: 700;
+  margin-top: 50px;
 }
 
 .footer-social {
@@ -323,12 +422,13 @@ a {
 
 .footer-social ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .social-button {
   color: #000000;
 }
-
 .filters {
   color: #ffffff;
   background-color: #000000;
