@@ -452,20 +452,48 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-social ul {
+  display: flex;
+  width: 150px;
+  flex-wrap: wrap;
+  justify-content: space-between;
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+/*  padding: 0;*/
+  padding-top: 36px;
 }
 
 .social-button {
-    width: 46px;
-    height: 48px;
+  width: 46px;
+  height: 48px;
 /*    display: block;*/
-    background: #81b3d1;
+  background: #81b3d1;
   color: #000000;
   display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+  align-items: center;
+  justify-content: center;
+}
+.social-button:hover {
+  background-color: #669ec0;
+}
+.social-button:focus path {
+  fill: rgba(255, 255, 255, 0.3);
+}
+.social-button:focus {
+  background-color: #5496bd
+}
+.footer-copyright {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.footer-copyright b {
+  padding-right: 8px;
+}
+.footer-copyright a:hover path {
+  fill: #81b3d2;
+}
+.footer-copyright a:focus path {
+  fill: #bdbbbc;
 }
 .filters {
   color: #ffffff;
