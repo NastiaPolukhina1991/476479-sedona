@@ -88,10 +88,10 @@ input[type="radio"].visually-hidden {
   color: #000000;
   background-color: #ffffff;
 }
-
 .main-navigation-list {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   min-width: 768px;
   list-style: none;
   margin: 0;
@@ -99,34 +99,27 @@ input[type="radio"].visually-hidden {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-
-.left a {
-  padding-left: 72px;
-  padding-right: 75px;
+.main-navigation-item a {
   color: #000000;
 }
-.right-karta a {
-  padding-left: 313px;
-  color: #000000;
+.main-navigation-item {
+  text-align: center;
+  min-width: 239px;
 }
-.right a {
-  padding-left: 165px;
-  color: #000000;
+.main-navigation-item:nth-child(3) {
+  margin-left: auto;
 }
-
-
 .main-navigation-list a:hover {
   color: #81b3d2;
 }
-
 .main-navigation-list a:focus {
   color: #b2b2b2;
 }
+
 .content-title,
 .content-feature {
   text-align: center;
 }
-
 .content-title {
   font-size: 21px;
   line-height: 26px;
@@ -148,14 +141,22 @@ input[type="radio"].visually-hidden {
 }
 .text-content {
   flex: 0 0 33.3333%;
+  padding-top: 46px;
 }
 .features-title {
   font-size: 21px;
+  line-height: 21px;
   width: 153px;
-  margin: 0 auto;
-  margin-top: 23px;
+/*  padding-top: 23px;*/
+  margin: auto;
 }
-
+.features-advantages .features-title{
+  font-size: 21px;
+  line-height: 21px;
+  width: 153px;
+  padding-top: 23px;
+  margin: 0;
+}
 .features-number {
   margin: 0 auto;
   margin-top: 25px;
@@ -164,6 +165,8 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
   margin-top: 21px;
   margin-bottom: 81px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 .features-picture {
   flex: 0 0 66.6666%;
@@ -175,21 +178,31 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
   text-align: center;
 }
-.home,
-.food,
-.gift {
-  margin-top: 60px;
+.features-advantages-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  flex: 0 0 33.3333%;
 }
 .features-advantages-grey {
   display: flex;
   justify-content: space-around;
   min-height: 256px;
-  margin-bottom: 57px;
+/*  margin-bottom: 57px;.*/
   color: #000000;
   background-color: #eeeeee;
   text-align: center;
 }
-
+.features-advantages-grey .features-advantages-item {
+  padding-top: 0px;
+}
+.features-advantages-grey .features-title {
+  padding-top: 46px;
+}
+.features-advantages-grey .features-text {
+  margin-bottom: 60px;
+}
 .search {
   min-width: 434px;
   font-weight: 700;
@@ -203,9 +216,12 @@ input[type="radio"].visually-hidden {
 }
 .search-title {
   font-size: 30px;
+  margin: 0;
+  padding-top: 57px;
 }
 .search-info {
   margin: 0 auto;
+  margin-top: 31px;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
@@ -222,18 +238,23 @@ input[type="radio"].visually-hidden {
   box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
 }
 .search-item {
+  display: flex;
   width: 450px;
   margin: 0;
+  margin-top: 5px;
   margin-bottom: 29px;
-  margin-left: 55px;
+  margin-left: 57px;
   text-align: left;
   line-height: 26px;
 }
 .search-item input {
+  flex-grow: 1;
   font: inherit;
   background-color: #f2f2f2;
+  min-height: 38px;
 }
 .search-item label {
+  flex: 0 0 95px;
   margin-right: 21px;
 }
 
@@ -252,7 +273,8 @@ input[type="radio"].visually-hidden {
   font-size: 21px;
   font-weight: bold;
   margin: 0 auto;
-  margin-top: 52px;
+  margin-top: 47px;
+  padding-left: 14px;
   color: #ffffff;
   background-color: #766357;
 }
@@ -274,7 +296,14 @@ input[type="radio"].visually-hidden {
   color:  rgba(255, 255, 255, 0.3);
   background-color: #503e33;
 }
-
+.btn-minus,
+.btn-plus {
+  border: none;
+  background-color: #f2f2f2;
+  font-size: 21px;
+  line-height: 21px;
+  color: #c9c9c9;
+}
 .find-button {
   width: 458px;
   height: 58px;
@@ -413,11 +442,13 @@ input[type="radio"].visually-hidden {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  margin-top: 50px;
+  margin-top: 39px;
+  margin-left: 66px;
 }
 
 .footer-social {
   text-align: center;
+  min-width: 33.3333%;
 }
 
 .footer-social ul {
@@ -427,7 +458,14 @@ input[type="radio"].visually-hidden {
 }
 
 .social-button {
+    width: 46px;
+    height: 48px;
+/*    display: block;*/
+    background: #81b3d1;
   color: #000000;
+  display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .filters {
   color: #ffffff;
