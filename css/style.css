@@ -197,12 +197,13 @@ input[type="radio"].visually-hidden {
 }
 .features-advantages-grey .features-advantages-item {
   padding-top: 0px;
+  padding-bottom: 60px;
 }
 .features-advantages-grey .features-title {
   padding-top: 46px;
 }
 .features-advantages-grey .features-text {
-  margin-bottom: 60px;
+  margin-bottom: 0px;
 }
 .search {
   min-width: 434px;
@@ -253,10 +254,14 @@ input[type="radio"].visually-hidden {
   font: inherit;
   background-color: #f2f2f2;
   min-height: 38px;
+  padding: 0;
+  padding-left: 13px;
+  min-width: 333px;
 }
 .search-item label {
   flex: 0 0 95px;
   margin-right: 21px;
+  padding-top: 6px;
 }
 
 .search-item input:hover {
@@ -267,26 +272,31 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
   border: solid 2px #e5e5e5;
 }
-
+.icon-calendar::before {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  content: "";
+  width: 21px;
+  height: 22px;
+  background: url(../img/calendar.png)no-repeat;
+}
 .search-btn {
-  display: block;
-  padding: 30px;
+  min-width: 568px;
   font-size: 21px;
   font-weight: bold;
   margin: 0 auto;
-  margin-top: 47px;
-  padding-left: 14px;
+  padding-top: 35px;
+  padding-bottom: 33px;
   color: #ffffff;
   background-color: #766357;
 }
+
 .search-btn-container {
+  display: flex;
+  margin-top: 47px;
   position: relative;
-  width: 568px;
-  height: 86px;
   text-align: center;
-  margin: 0 auto;
-  color: #ffffff;
-  background-color: #766357;
 }
 .serch-btn a:hover {
   color:  rgba(255, 255, 255, 0.3);
@@ -382,8 +392,8 @@ input[type="radio"].visually-hidden {
 }
 .hotels-item-img {
   margin: 0;
-  padding-top: 30px;
   padding-left: 72px;
+  padding-top: 30px;
 }
 .hotels-item-price {
   margin: 0;
