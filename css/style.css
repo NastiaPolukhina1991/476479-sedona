@@ -206,6 +206,7 @@ input[type="radio"].visually-hidden {
   margin-bottom: 0px;
 }
 .search {
+  position: relative;
   min-width: 434px;
   font-weight: 700;
   color: #000000;
@@ -389,11 +390,11 @@ input[type="radio"].visually-hidden {
 .hotels-item {
   display: flex;
   border-bottom: solid #e5e5e5 1px;
+  padding-left: 72px;
+  padding-top: 30px;
 }
 .hotels-item-img {
   margin: 0;
-  padding-left: 72px;
-  padding-top: 30px;
 }
 .hotels-item-price {
   margin: 0;
@@ -414,7 +415,6 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: column;
   margin-left: 30px;
-  padding-top: 30px;
 }
 .hotels-block {
   display: flex;
@@ -426,7 +426,6 @@ input[type="radio"].visually-hidden {
   flex-direction: column;
   justify-content: space-around;
   margin-left: auto;
-  margin-top: 30px;
   min-width: 110px;
   text-align: center;
   padding-right: 73px;
