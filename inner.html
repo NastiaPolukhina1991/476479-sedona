@@ -34,57 +34,57 @@
             <legend>Инфраструктура:</legend>
             <ul>
               <li class="filter-option">
-                <input class="visually-hidden filter-checkbox" id="pool" type="checkbox" name="waterpool" checked>
-                <label for="pool">Бассейн</label>
+                <input class="visually-hidden filter-input-checkbox" id="pool" type="checkbox" name="waterpool" checked>
+                <label class="filter-checkbox" for="pool">Бассейн</label>
               </li>
               <li class="filter-option">
-                <input id="parking" type="checkbox" name="car-park">
-                <label id="parking">Парковка</label>
+                <input class="visually-hidden filter-input-checkbox" id="parking" type="checkbox" name="car-park">
+                <label class="filter-checkbox" for="parking">Парковка</label>
               </li>
               <li class="filter-option">
-                <input id="wi-fi" type="checkbox" name="internet">
-                <label for="wi-fi">Wi-fi</label>
+                <input class="visually-hidden filter-input-checkbox" id="wi-fi" type="checkbox" name="internet">
+                <label class="filter-checkbox" for="wi-fi">Wi-fi</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="housing">
             <legend>Тип жилья:</legend>
             <ul>
               <li class="filter-option">
-                <input id="hotel" type="checkbox" name="hotel-room" checked>
-                <label for="hotel">Гостиница</label>
+                <input class="visually-hidden filter-input-checkbox" id="hotel" type="checkbox" name="hotel-room" checked>
+                <label class="filter-checkbox" for="hotel">Гостиница</label>
               </li>
               <li class="filter-option">
-                <input id="motel" type="checkbox" name="motel-room" checked>
-                <label id="motel">Мотель</label>
+                <input class="visually-hidden filter-input-checkbox" id="motel" type="checkbox" name="motel-room" checked>
+                <label class="filter-checkbox" for="motel">Мотель</label>
               </li>
               <li class="filter-option">
-                <input id="room" type="checkbox" name="apartment" checked>
-                <label for="room">Апартаменты</label>
+                <input class="visually-hidden filter-input-checkbox" id="room" type="checkbox" name="apartment" checked>
+                <label class="filter-checkbox" for="room">Апартаменты</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset>
-            <legend>Стоимость в сутки(р):</legend>
+          <fieldset class="price-day">
             <div class="filter-range">
-              <div class="filter-option">От
-                <input id="min-price" name="price" value="0">
-                <label for="min-price"></label>
+              <div class="filter-range-title">Стоимость в сутки (р):</div>
+              <div class="price-control">
+                <label class="min-price" for="min-price">от
+                  <input id="min-price" name="min-price" value="0">
+                </label>
+                
+                <label class="max-price" for="max-price">до
+                  <input id="max-price" name="min-price" value="3000">
+                </label>
               </div>
-              <div class="filter-option">До
-                <input id="max-price" name="price" value="3000">
-                <label id="max-price"></label>
-              </div>
-
-              <div class="scroll">
+              <div class="range-control">
                 <div class="line">
                   <div class="bar"></div>
                 </div>
-                <div class="scroll-min"></div>
-                <div class="scroll-max"></div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
               </div>
+              <button class="reveal-btn" type="submit">Показать</button>
             </div>
-            <button class="reveal-btn" type="submit">Показать</button>
           </fieldset>
         </form>
       </section>
