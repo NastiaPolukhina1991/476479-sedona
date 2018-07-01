@@ -616,6 +616,7 @@ input[type="radio"].visually-hidden {
   border-bottom: 1px solid #e5e5e5;
   padding-left: 72px;
   padding-top: 30px;
+  padding-bottom: 26px;
 }
 .hotels-item-img {
   margin: 0;
@@ -644,19 +645,31 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
   width: 182px;
+  margin-top: 5px;
 }
 .hotels-rating {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-left: auto;
   min-width: 110px;
+  height: 90px;
   text-align: center;
   padding-right: 73px;
 }
+.rating {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+}
 .hotels-star {
+  height: 20px;
+}
+.star-icon {
+  width: 18px;
+  height: 18px;
   background: url(../img/star.png) no-repeat;
-  height: 17px;
+  margin-left: 7px;
 }
 
 .hotels-rating-text {
@@ -672,7 +685,7 @@ input[type="radio"].visually-hidden {
 }
 .sort-item {
   padding-left: 49px;
-  padding-top: 34px;
+  padding-top: 36px;
   font-size: 12px;
 }
 .sort-item a {
@@ -711,9 +724,6 @@ input[type="radio"].visually-hidden {
 }
 .sort-btns a:focus path {
   fill: #81b3d2;
-}
-.hotels-item {
-  min-height: 150px;
 }
 .hotels-item-price {
   display: flex;
