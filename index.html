@@ -111,7 +111,6 @@
         </div>
         <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
           <div class="search-item">
-           
             <label for="search-arrival">Дата заезда:</label>
             <div class="form-line">
             <input id="search-arrival" type="text" name="date" value="24 апреля 2017" placeholder="24 апреля 2017">
@@ -180,8 +179,21 @@
         </p>
       </footer>
     </div>
-
   </div>
+  <script>
+    var link = document.querySelector(".search-btn");
+    var popup = document.querySelector(".search-form");
+    var close = popup.querySelector(".search-btn");
+    var date = popup.querySelector("#search-arrival");
+    link.addEventListener("click", function (evt){
+      evt.preventDefault();
+      popup.classList.toggle("search-form-show");
+      date.focus();
+    })
+    close.addEventListener("click", function (evt){
+      evt.preventDefault();
+      popup.classList.toggle("search-form-show");
+    });
+  </script>
 </body>
-
 </html>
