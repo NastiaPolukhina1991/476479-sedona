@@ -459,6 +459,10 @@ input[type="radio"].visually-hidden {
   color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
 }
+.map {
+  background-image: url(../img/map.jpg);
+  background-repeat: no-repeat;
+}
 .filter {
   display: flex;
 /*  justify-content: space-around;*/
