@@ -43,7 +43,7 @@ input[type="radio"].visually-hidden {
   box-shadow: 0 0 30px 10px #f2f2f2;
 }
 .main-header {
-    position: relative;
+  position: relative;
 }
 .main-header-logo {
   position: absolute;
@@ -79,7 +79,6 @@ input[type="radio"].visually-hidden {
   height: 57px;
   background: url(../img/mask.png) no-repeat;
 }
-
 .main-navigation {
   display: flex;
   flex-direction: column;
@@ -116,7 +115,9 @@ input[type="radio"].visually-hidden {
 .main-navigation-list a:focus {
   color: #b2b2b2;
 }
-
+.main-navigation-list a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
 .content-title,
 .content-feature {
   text-align: center;
@@ -253,6 +254,7 @@ input[type="radio"].visually-hidden {
   background-color: #503e33;
 }
 .search-form {
+  display: none;
   position: absolute;
   left: 0;
   right: 0;
@@ -264,6 +266,10 @@ input[type="radio"].visually-hidden {
   padding-top: 55px;
   background: #ffffff;
   box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
+}
+.search-form-show {
+  display: block;
+  animation: swing 0.6s;
 }
 .search-item {
   display: flex;
@@ -412,6 +418,26 @@ input[type="radio"].visually-hidden {
 .btn-plus-kids:active {
   color: #81b3d2;
 }
+@keyframes swing {
+  15% {
+    transform: translateY(9px);
+  }
+  30% {
+    transform: translateY(-9px);
+  }
+  40% {
+    transform: translateY(6px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+  65% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 .find-button {
   width: 458px;
   height: 58px;
@@ -433,6 +459,10 @@ input[type="radio"].visually-hidden {
 .find-button:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
+}
+.map {
+  background-image: url(../img/map.jpg);
+  background-repeat: no-repeat;
 }
 .filter {
   display: flex;
@@ -470,13 +500,13 @@ input[type="radio"].visually-hidden {
   margin-bottom: 25px;
 }
 .infrastructure {
-  width: 260px;
+  width: 255px;
 }
 .housing {
   width: 480px;
 }
 .price-day {
-  
+  width: 317px;
 }
 .filter-option {
   margin-bottom: 25px;
@@ -504,7 +534,7 @@ input[type="radio"].visually-hidden {
   opacity: 0.3;
 }
 .filter-range {
-  width: 330px;
+  width: 317px;
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -585,7 +615,8 @@ input[type="radio"].visually-hidden {
 }
 .reveal-btn {
   display: block;
-  margin: 0 auto;
+/*  margin: 0 auto;*/
+  margin-left: 87px;
   padding: 6px 32px;
   font-size: 14px;
   line-height: 21px;
@@ -606,6 +637,64 @@ input[type="radio"].visually-hidden {
   line-height: 26px;
   padding-top: 31px;
   padding-left: 72px;
+  padding-right: 49px;
+}
+.sort {
+  display: flex;
+  border-bottom: solid #e5e5e5 1px;
+}
+.sort-item .current {
+  padding-left: 38px;
+  color: #81b3d2;
+  border: none;
+}
+.sort-item {
+  padding-top: 33px;
+  font-size: 12px;
+}
+.sort-item:nth-child(4) {
+  padding-left: 33px;
+  padding-right: 33px;
+}
+.sort-item a {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted #81b3d2;
+}
+.sort-item a:hover {
+  color: #81b3d2;
+}
+.sort-item a:focus {
+  color: #000000;
+  border: none;
+}
+.sort ul{
+  list-style: none;
+}
+.sort-list {
+  display: flex;
+  min-height: 86px;
+  padding: 0;
+  margin: 0;
+  min-width: 1090px;
+}
+.sort-btns {
+  min-width: 100px;
+  margin: auto;
+  margin-left: 0;
+}
+.sort-btns a {
+  font-size: 23px;
+}
+.sort-btns a:hover path {
+  fill: #000000;
+}
+.sort-btns a:focus path {
+  fill: #81b3d2;
+}
+.icon-up {
+  padding-right: 6px;
+  padding-left: 3px;
 }
 .hotels-list {
   margin: 0;
@@ -616,7 +705,7 @@ input[type="radio"].visually-hidden {
   border-bottom: 1px solid #e5e5e5;
   padding-left: 72px;
   padding-top: 30px;
-  padding-bottom: 26px;
+  padding-bottom: 24px;
 }
 .hotels-item-img {
   margin: 0;
@@ -627,7 +716,6 @@ input[type="radio"].visually-hidden {
 .hotels-title {
   font-size: 21px;
   font-weight: bold;
-  line-height: 26px;
   margin: 0;
 }
 .hotels-title:hover {
@@ -645,7 +733,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
   width: 182px;
-  margin-top: 5px;
+  margin-top: 7px;
 }
 .hotels-rating {
   display: flex;
@@ -669,61 +757,18 @@ input[type="radio"].visually-hidden {
   width: 18px;
   height: 18px;
   background: url(../img/star.png) no-repeat;
-  margin-left: 7px;
+  margin-left: 3px;
 }
-
+.star-icon:nth-child(2) {
+  margin-left: 6px;
+}
+.star-icon:nth-child(3) {
+  margin-left: 8px;
+}
 .hotels-rating-text {
   padding-top: 3px;
-}
-.sort {
-  display: flex;
-  border-bottom: solid #e5e5e5 1px;
-}
-.sort-item .current {
-  color: #81b3d2;
-  border: none;
-}
-.sort-item {
-  padding-left: 49px;
-  padding-top: 36px;
-  font-size: 12px;
-}
-.sort-item a {
-  font-size: 12px;
-  color: rgba(0, 0, 0, 0.3);
-  border-bottom: 1px dotted #81b3d2;
-}
-.sort-item a:hover {
-  color: #81b3d2;
-}
-
-.sort-item a:focus {
-  color: #000000;
-  border: none;
-}
-.sort ul{
-  list-style: none;
-}
-.sort-list {
-  display: flex;
-/*  justify-content: space-around;*/
-  min-height: 86px;
-  padding: 0;
-  margin: 0;
-  min-width: 1100px;
-}
-.sort-btns {
-  min-width: 100px;
-  margin: auto;
-}
-.sort-btns a {
-  font-size: 23px;
-}
-.sort-btns a:hover path {
-  fill: #000000;
-}
-.sort-btns a:focus path {
-  fill: #81b3d2;
+  padding-bottom: 3px;
+  padding-left: 3px;
 }
 .hotels-item-price {
   display: flex;
@@ -760,7 +805,6 @@ input[type="radio"].visually-hidden {
   color: #000000;
   background-color: #f2f2f2;
 }
-
 .main-footer {
   display: flex;
   justify-content: space-between;
@@ -770,7 +814,6 @@ input[type="radio"].visually-hidden {
   background: #ffffff;
   opacity: 0.9;
 }
-
 .footer-site {
   font-size: 21px;
   line-height: 26px;
@@ -779,13 +822,11 @@ input[type="radio"].visually-hidden {
   padding-top: 44px;
   padding-left: 134px;
 }
-
 .footer-social {
   text-align: center;
   min-width: 33.3333%;
   padding-left: 27px;
 }
-
 .footer-social ul {
   display: flex;
   width: 150px;
@@ -796,7 +837,6 @@ input[type="radio"].visually-hidden {
   padding: 0;
   padding-top: 34px;
 }
-
 .social-button {
   width: 46px;
   height: 48px;
@@ -820,10 +860,12 @@ input[type="radio"].visually-hidden {
   display: flex;
   align-items: center;
   margin: 0;
-  padding-right: 99px;
+  padding-top: 3px;
+  padding-right: 100px;
 }
 .footer-copyright b {
   padding-right: 8px;
+  font-weight: 400;
 }
 .footer-copyright a:hover path {
   fill: #81b3d2;
