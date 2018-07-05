@@ -465,6 +465,9 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
   position: relative;
 }
+.map iframe {
+  border: none;
+}
 .filter {
   display: flex;
   min-height: 190px;
@@ -869,4 +872,5 @@ input[type="radio"].visually-hidden {
 }
 .hotels-pages {
   margin-top: 0;
+  position: relative;
 }
