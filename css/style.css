@@ -19,6 +19,7 @@ a {
 img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -149,14 +150,13 @@ input[type="radio"].visually-hidden {
   font-size: 21px;
   line-height: 21px;
   width: 153px;
-/*  padding-top: 23px;*/
   margin: auto;
 }
 .features-advantages .features-title{
   font-size: 21px;
   line-height: 21px;
   width: 153px;
-  padding-top: 23px;
+  padding-top: 29px;
   margin: 0;
 }
 .features-number {
@@ -165,9 +165,9 @@ input[type="radio"].visually-hidden {
 }
 .features-text {
   margin: 0 auto;
-  margin-top: 21px;
-  margin-bottom: 81px;
-  padding-left: 60px;
+  margin-top: 24px;
+/*  margin-bottom: 81px;*/
+  padding-left: 50px;
   padding-right: 60px;
 }
 .features-picture {
@@ -179,6 +179,7 @@ input[type="radio"].visually-hidden {
   color: #000000;
   background-color: #ffffff;
   text-align: center;
+  min-height: 330px;
 }
 .features-advantages-item {
   display: flex;
@@ -198,13 +199,15 @@ input[type="radio"].visually-hidden {
 }
 .features-advantages-grey .features-advantages-item {
   padding-top: 0px;
-  padding-bottom: 60px;
+/*  padding-bottom: 60px;*/
 }
 .features-advantages-grey .features-title {
   padding-top: 46px;
 }
 .features-advantages-grey .features-text {
   margin-bottom: 0px;
+  padding-left: 60px;
+  padding-bottom: 55px;
 }
 .search {
   position: relative;
@@ -311,30 +314,30 @@ input[type="radio"].visually-hidden {
   border: none;
   padding: 0;
   cursor: pointer;
-  content: "";
-  width: 21px;
-  height: 22px;
-  background: url(../img/calendar.svg)no-repeat;
+  background: none;
+}
+.icon-calendar svg {
+  fill: #a9a9a9;
 }
 .icon-calendar:hover path {
   fill: #000000;
 }
 .search-wrapper {
   display: flex;
-  position: relative;
 }
 .adults{
-  position: relative;
+  width: 50%;
 }
 .adults input {
   width: 38px;
   padding: 0;
   text-align: center;
   flex-grow: 0;
-  margin-left: 38px;
+}
+.btn-wrapper {
+  display: flex;
 }
 .btn-minus-adults {
-  position: absolute;
   left: 117px;
   width: 38px;
   height: 38px;
@@ -347,7 +350,6 @@ input[type="radio"].visually-hidden {
   color: #c9c9c9;
 }
 .btn-plus-adults {
-  position: absolute;
   left: 192px;
   width: 38px;
   height: 38px;
@@ -368,24 +370,22 @@ input[type="radio"].visually-hidden {
   color: #81b3d2;
 }
 .kids {
+  width: 50%;
   margin-left: 0;
-  position: relative;
   text-align: center;
-  padding-left: 81px;
 }
 .kids label {
   flex-basis: 63px;
   margin-right: 11px;
+  padding-left: 41px;
 }
 .kids input {
   width: 38px;
-  margin-left: 38px;
   padding: 0;
   text-align: center;
   flex-grow: 0;
 }
 .btn-minus-kids {
-  position: absolute;
   left: 155px;
   width: 38px;
   height: 38px;
@@ -398,7 +398,6 @@ input[type="radio"].visually-hidden {
   color: #c9c9c9;
 }
 .btn-plus-kids {
-  position: absolute;
   right: 1px;
   width: 38px;
   height: 38px;
@@ -463,10 +462,10 @@ input[type="radio"].visually-hidden {
 .map {
   background-image: url(../img/map.jpg);
   background-repeat: no-repeat;
+  position: relative;
 }
 .filter {
   display: flex;
-/*  justify-content: space-around;*/
   min-height: 190px;
 }
 .filters fieldset {
@@ -615,7 +614,6 @@ input[type="radio"].visually-hidden {
 }
 .reveal-btn {
   display: block;
-/*  margin: 0 auto;*/
   margin-left: 87px;
   padding: 6px 32px;
   font-size: 14px;
@@ -757,13 +755,7 @@ input[type="radio"].visually-hidden {
   width: 18px;
   height: 18px;
   background: url(../img/star.png) no-repeat;
-  margin-left: 3px;
-}
-.star-icon:nth-child(2) {
-  margin-left: 6px;
-}
-.star-icon:nth-child(3) {
-  margin-left: 8px;
+  margin-left: 5px;
 }
 .hotels-rating-text {
   padding-top: 3px;
@@ -808,7 +800,9 @@ input[type="radio"].visually-hidden {
 .main-footer {
   display: flex;
   justify-content: space-between;
-  margin-top: -126px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   height: 120px;
   color: #000000;
   background: #ffffff;
@@ -840,7 +834,6 @@ input[type="radio"].visually-hidden {
 .social-button {
   width: 46px;
   height: 48px;
-/*    display: block;*/
   background: #81b3d1;
   color: #000000;
   display: flex;
