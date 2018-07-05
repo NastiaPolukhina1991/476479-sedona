@@ -7,7 +7,4 @@
       popup.classList.toggle("search-form-show");
       date.focus();
     })
-    close.addEventListener("click", function (evt){
-      evt.preventDefault();
-      popup.classList.toggle("search-form-show");
-    });
+
