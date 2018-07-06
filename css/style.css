@@ -311,6 +311,16 @@ input[type="radio"].visually-hidden {
 .form-line {
   position: relative;
 }
+.form-line input::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+.form-line input::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
 .icon-calendar {
   position: absolute;
   top: 8px;
