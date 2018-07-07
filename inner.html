@@ -21,7 +21,7 @@
           <li class="main-navigation-item"><a href="info.html">Информация</a></li>
           <li class="main-navigation-item"><a href="foto.html">Фото и видео</a></li>
           <li class="main-navigation-item"><a href="map.html">Карта Штата</a></li>
-          <li class="main-navigation-item">Гостиницы</li>
+          <li class="main-navigation-item current">Гостиницы</li>
         </ul>
       </nav>
     </header>
@@ -71,7 +71,7 @@
                 <label class="min-price" for="min-price">от
                   <input id="min-price" name="min-price" value="0">
                 </label>
-                
+
                 <label class="max-price" for="max-price">до
                   <input id="max-price" name="min-price" value="3000">
                 </label>
@@ -92,22 +92,20 @@
       <section class="sort">
         <h2 class="visually-hidden">Результат поиска</h2>
         <ul class="sort-list">
-          <span class="found">Найдено: 3</span>
+          <li class="found">Найдено: 3</li>
           <li class="sort-item"> Сортировка:</li>
           <li class="sort-item"><a class="current" href="">По цене</a></li>
           <li class="sort-item"><a href="">По типу</a></li>
           <li class="sort-item"><a href="">По рейтингу</a></li>
         </ul>
         <div class="sort-btns">
-         <a href="#">
-          <span class="icon-up">
+         <a class="icon-up" href="#">
+          <span class="visually-hidden">Вверх</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#cacaca" d="M5.5 0L0 10h11z"/></svg>
-          </span>
          </a>
-         <a href="#">
-          <span class="icon-down">
+         <a class="icon-down" href="#">
+          <span class="visually-hidden">Вниз</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#81b3d2" d="M5.5 10L0 0h11"/></svg>
-          </span>
           </a>
         </div>
       </section>
@@ -118,7 +116,9 @@
           <li class="hotels-item">
             <p class="hotels-item-img"><img src="img/amara-resort.jpg" width="135" height="90" alt="Amara Resort & Spa"></p>
             <div class="hotels-container">
-            <h3 class="hotels-title">Amara Resort & Spa</h3>
+            <h3 class="hotels-title">
+              <a href="">Amara Resort & Spa</a>
+            </h3>
             <p class="hotels-block">
               <span class="hotels-category">Гостиница</span>
               <span class="hotels-category">от 4000р.</span>
@@ -143,7 +143,9 @@
           <li class="hotels-item">
             <p class="hotels-item-img"><img src="img/desert-quail.jpg" width="135" height="90" alt="Desert Quail Inn"></p>
             <div class="hotels-container">
-            <h3 class="hotels-title">Desert Quail Inn</h3>
+            <h3 class="hotels-title">
+              <a href="">Desert Quail Inn</a>
+            </h3>
             <p class="hotels-block">
               <span class="hotels-category">Мотель</span>
               <span class="hotels-category">от 3000р.</span>
@@ -167,7 +169,9 @@
           <li class="hotels-item">
             <p class="hotels-item-img"><img src="img/villas.jpg" width="135" height="90" alt="Villas At Poco Diablo"></p>
             <div class="hotels-container">
-            <h3 class="hotels-title">Villas At Poco Diablo</h3>
+            <h3 class="hotels-title">
+              <a href="">Villas At Poco Diablo</a>
+            </h3>
             <p class="hotels-block">
               <span class="hotels-category">Апартаменты</span>
               <span class="hotels-category">от 2000р.</span>
