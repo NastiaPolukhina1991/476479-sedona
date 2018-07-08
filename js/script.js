@@ -6,12 +6,12 @@
 //        need as huck for ie
       evt.preventDefault = function () {
       Object.defineProperty(this, "defaultPrevented", {
-    get: function () {
+      get: function () {
       return true;
     }
   });
 };
-    link.addEventListener("click", function (evt){
+      link.addEventListener("click", function (evt){
       evt.preventDefault();
       evt.defaultPrevented;
       popup.classList.toggle("search-form-show");
