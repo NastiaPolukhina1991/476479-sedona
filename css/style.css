@@ -169,7 +169,7 @@ input[type="radio"].visually-hidden {
   margin-top: 25px;
 }
 .features-text {
-  max-width: 100%;
+  max-width: 80%;
   margin: 0 auto;
   margin-top: 21px;
   padding-left: 50px;
@@ -188,6 +188,7 @@ input[type="radio"].visually-hidden {
 }
 .features-advantages .features-text {
   margin-top: 24px;
+  padding-bottom: 80px;
 }
 .features-advantages-item:nth-child(3) {
   padding-top: 55px;
@@ -196,8 +197,9 @@ input[type="radio"].visually-hidden {
   padding-top: 31px;
 }
 .features-row .features-text {
-    padding-left: 48px;
-    margin-top: 20px;
+  padding-left: 48px;
+  margin-top: 20px;
+  padding-bottom: 60px;
 }
 .features-advantages-item {
   display: flex;
@@ -525,7 +527,7 @@ input[type="radio"].visually-hidden {
   padding-top: 27px;
   padding-left: 72px;
   padding-right: 72px;
-  height: 190px;
+  min-height: 190px;
 }
 .filters ul {
   padding: 0;
@@ -555,6 +557,8 @@ input[type="radio"].visually-hidden {
   content: "";
   display: block;
   position: absolute;
+  top: -1px;
+  left: -2px;
   background-image: url(../img/checkbox-off.svg);
   background-repeat: no-repeat;
   width: 30px;
@@ -568,6 +572,9 @@ input[type="radio"].visually-hidden {
   background-image: url(../img/checkbox-off.svg);
   background-repeat: no-repeat;
   opacity: 0.3;
+}
+.filter-input-checkbox:focus + label::before {
+  outline: 2px solid #81b3d2;
 }
 .filter-range {
   width: 317px;
@@ -686,7 +693,7 @@ input[type="radio"].visually-hidden {
 .sort {
   display: flex;
   align-items: center;
-  border-bottom: solid #e5e5e5 1px;
+  border-bottom: 1px solid #e5e5e5;
   background: #ffffff;
 }
 .sort-item .current {
@@ -780,6 +787,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-direction: column;
   margin-left: 30px;
+  width: 780px;
 }
 .hotels-block {
   display: flex;
