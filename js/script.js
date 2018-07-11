@@ -15,7 +15,7 @@
       evt.preventDefault();
       evt.defaultPrevented;
       popup.classList.toggle("search-form-show");
-      popup.classList.toggle("modal-error");
       date.focus();
-    })
+    });
+
 
