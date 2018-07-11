@@ -16,5 +16,6 @@
       evt.defaultPrevented;
       popup.classList.toggle("search-form-show");
       date.focus();
-    })
+    });
+
 
