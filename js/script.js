@@ -4,7 +4,6 @@ var arrival = popup.querySelector("[name=date-arrival]");
 var departure = popup.querySelector("[name=date-departure]");
 var adults = popup.querySelector("[name=adults]");
 var kids = popup.querySelector("[name=kids]");
-var form = popup.querySelector("form");
 var date = popup.querySelector("#search-arrival");
 var evt = document.createEvent('CustomEvent');
 evt.initCustomEvent('custom', true, true, {});
